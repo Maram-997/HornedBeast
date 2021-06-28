@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1{
+  text-align: center;
+}
+
+img{
+  width:250px;
+  height: 250px;
+}
+
+.beast{
+  display: inline-block;
+  width: 400px;
+  margin-left: 20px;
+}
+.beast p{
+  text-align: initial;
+}
+.beast h3{
+  margin-left: 60px;
+}
+.beast button{
+margin-left: 70px;
+}
