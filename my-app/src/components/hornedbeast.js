@@ -1,6 +1,9 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 class hornedbeasts extends React.Component {
     constructor(props) {
@@ -14,30 +17,20 @@ class hornedbeasts extends React.Component {
             votes: this.state.votes + 1
         })
     }
+    showTheCard =()=>{
+        this.props.selectedCard(this.props.title)
+    }
+
+
+  
 
     render() {
         return (
-            //     <div className="beast">
 
-            //     <h3>
-            //         {this.props.title}
-            //     </h3>
-            //     <img  src={this.props.image_url}  alt={this.props.title}/>
-            //     <p>
-            //         {this.props.description}
-            //     </p>
-
-            //     <p> Number of Votes: {this.state.votes}</p>
-
-            //     <button onClick={this.countingVotes}>
-            //         Vote
-            //     </button>
-
-            // </div>
 
             <div className="beast">
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={this.props.image_url} alt={this.props.title} />
+            <Card onClick={this.props.showTheCard} style={{ width: '18rem' }}>
+                <Card.Img  variant="top" src={this.props.image_url} alt={this.props.title} />
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>

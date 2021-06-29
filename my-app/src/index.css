@@ -21,11 +21,11 @@ img{
   height: 250px;
 }
 
-.beast{
+/* .beast{
   display: inline-block;
   width: 400px;
   margin-left: 20px;
-}
+} */
 .beast p{
   text-align: initial;
 }
