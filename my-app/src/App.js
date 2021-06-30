@@ -14,12 +14,13 @@ class App extends React.Component{
   constructor(props) {
     super(props);
         this.state = {
+            data: Horned,
             show: false,
             dataModel: {}
 
         }
 }
-selectedImage = title =>{
+selectedCard = title =>{
     const found = Horned.find(element => 
       { if (element.title === title)
         { return element;}

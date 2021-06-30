@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class hornedbeasts extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             votes: 0
         }
@@ -29,7 +29,7 @@ class hornedbeasts extends React.Component {
 
 
             <div className="beast">
-            <Card onClick={this.props.showTheCard} style={{ width: '18rem' }}>
+            <Card onClick={this.showTheCard} style={{ width: '18rem' }}>
                 <Card.Img  variant="top" src={this.props.image_url} alt={this.props.title} />
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>

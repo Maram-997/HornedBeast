@@ -18,7 +18,7 @@ class SelectedHorned extends React.Component{
             <p>  {this.props.displayContent.description}</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={this.props.handleClose}>
+          <Button variant="secondary" onClick={this.props.closing}>
             Close
           </Button>
         </Modal.Footer>
