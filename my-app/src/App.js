@@ -48,13 +48,13 @@ HandleClose = () => {
 
   render(){
     return (
-      <div>
+      <>
       <Header/>
       < Main data={this.state.data} selectedCard={this.selectedCard}/>
       <Footer/>
       <SelectedHorned display={this.state.show} displayContent={this.state.dataModel} closing={this.HandleClose} />
 
-      </div>
+      </>
     )
   }
 }

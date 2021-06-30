@@ -6,7 +6,7 @@ class Main extends React.Component {
 
     render() {
         return (
-            <div> {
+            <> {
 
                 this.props.data.map((item, index) => {
                     return (
@@ -22,7 +22,7 @@ class Main extends React.Component {
                 )
             }
 
-            </div>
+            </>
 
         )
     }
