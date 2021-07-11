@@ -15,7 +15,7 @@ class Main extends React.Component {
             chosen:Horned
         }
     }
-
+// function cased one choose the selected horn beast 
  ChoosingHorns = (event) =>{
     event.preventDefault();
      let Horns = parseInt(event.target.value)
